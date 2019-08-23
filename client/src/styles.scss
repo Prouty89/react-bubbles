@@ -14,6 +14,11 @@ body,
   font-family: "Montserrat", sans-serif;
   text-align: center;
   display: flex;
+  flex-direction: column;
+  background-image: url('./img/colors.jpg');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
 
   svg {
     height: 100%;
@@ -25,7 +30,15 @@ body,
 }
 
 .bubble-wrap {
-  margin: 0 auto;
+  position: fixed;
+  left: 40%;
+  top: 20%;
+  height: 500px;
+  background: rgb(255, 253, 253);
+  border: 3px rgba(214, 210, 210, 0.21) solid;
+  border-radius: 49%;
+  border-style: dotted;
+  width: 500px;
   display: flex;
   flex-direction: column;
 }
@@ -63,7 +76,10 @@ body,
 form {
   margin-top: 60px;
   display: flex;
+  background: rgb(196, 188, 178);
   flex-direction: column;
+  width: 500px;
+  margin: 0 auto;
 
   legend {
     padding-left: 40px;
@@ -75,13 +91,22 @@ form {
 
   label {
     display: flex;
-    justify-content: space-between;
-    padding: 4px 36px 4px 40px;
+    flex-direction: column;
   }
 
   input {
-    width: 100px;
+    width: 120px;
+    margin: 0 auto;
   }
+}
+
+.login{
+  border-style: none;
+  height: 200px;
+}
+
+.edit-button{
+  text-align: center;
 }
 
 .button-row {
@@ -96,4 +121,13 @@ form {
     padding: 3px 8px;
     margin-top: 16px;
   }
+}
+
+.edit-color{
+  width: 300px;
+  background: rgb(196, 188, 178);
+}
+
+.added-color{
+  width: 300px;
 }
